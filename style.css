@@ -18,6 +18,7 @@ section {
 
 nav {
     text-align: right;
+    white-space: nowrap;
 }
 
 nav a {
@@ -131,17 +132,17 @@ main {
 
 @media (max-width: 840px) {
     nav a {
-        font-size: 18px;
+        font-size: 20px;
         padding: 0 12px;
         white-space: nowrap;
     }
 
-    header {
-        padding: 0 20px;
+    header img {
+        width: 120px;
     }
 
-    header img {
-        width: 90%;
+    header {
+        padding: 0 10px;
     }
 
     .first-block_description, article {
@@ -155,8 +156,19 @@ main {
     .heading {
         font-size: 35px;
     }
-    footer{
+
+    footer {
         padding: 30px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    header img {
+        width: 70px;
+    }
+
+    nav a {
+        font-size: 12px;
     }
 }
 
